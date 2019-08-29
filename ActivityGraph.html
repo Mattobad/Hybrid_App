@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Title of the document</title>
+<!-- CSS --><link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" /><!-- JS -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+<script src="interactiveDrawing.js"></script>
+
+</head>
+
+<body>
+
+	<div data-role="page">
+	<div data-role="header" data-id="persistent" data-position="fixed">
+					<h1>Activity Graph</h1>
+
+	</div>
+
+<div>
+<label>Red:</label><br>
+<input type="range" min="0" max="255" step="1" value="0" id="red"><br>
+<label>Green:</label><br>
+<input type="range" min="0" max="255" step="1" value="0" id="green"><br>
+<label>Blue:</label><br>
+<input type="range" min="0" max="255" step="1" value="0" id="blue"><br>
+<select id="shape" data-native-menu="false">
+	<option value="circle">Circle</option>
+	<option value="rectangle">Rectangle</option>
+	<option value="triangle">Triangle</option>
+</select><br>
+<input type="button" value="draw" id="drawButton" onclick="draw();">
+</div>
+<canvas id="canvasElement" height="300" width="300">
+	
+</canvas>
+
+
+The content of the document......
+</body>
+
+</html>

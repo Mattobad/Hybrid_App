@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- CSS --><link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" /><!-- JS -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script src="calApp.js"></script>
+<title>
+Title of the document</title>
+</head>
+
+<body>
+	<div data-role="page">
+	<div data-role="header" data-id="persistent" data-position="fixed">
+					<h1>Simple Calculator</h1>
+
+	</div>
+
+
+
+	<div data-role="content">
+		
+		<label for="userInput">Enter numbers:</label><br>
+		<label for="number1">Number 1:</label><br>
+		<input type="number" name="angle" id='number1'  placeholder="Enter a number 1"><br>
+		<label for="number2">Number 2:</label><br>
+		<input type="number" name="velocity" id='number2'  placeholder="Enter number 2">
+		<br>
+		<br>
+		<table>
+	<div class="btn-group">
+		<th><button onclick="add();" >Add</button></th>
+		<th><button  onclick="multiply();" >Multiply</button></th>
+		<th><button  onclick="subtract();" >Subtract</button></th>
+		<th><button  onclick="divide();" >Divide</button></th>
+	</div>
+	
+</table>
+	
+		
+		<br>
+		<br>
+
+
+		<table id="data">
+			<tr>
+				<td>Output:</td>
+				<td id='output'>0</td>
+			</tr>
+		</table>
+	</div>
+
+<div data-role=footer data-id="persistent" data-position="fixed">
+	<h1>Cross-Platform by Sarbottam</h1>
+	
+</div>
+The content of the document......
+</body>
+
+</html>
