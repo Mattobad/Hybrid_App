@@ -4,14 +4,14 @@ var mongodb = require('mongodb');
 //#############################################
 // These const/vars should be changed to use your own 
 // ID, password, databse, and ports
-const SERVER_PORT = 8155;
-var user = 's_thapamagar';
-var password = 'A00430095';
-var database = 's_thapamagar';
+const SERVER_PORT = ;
+var user = '';
+var password = '';
+var database = '';
 //#############################################
 //These should not change, unless the server spec changes
 var host = '127.0.0.1';
-var port = '27017'; // Default MongoDB port
+var port = ''; // Default MongoDB port
 // Now create a connection String to be used for the mongo access
 var connectionString = 'mongodb://' + user + ':' + password + '@' +
 host + ':' + port + '/' + database;
